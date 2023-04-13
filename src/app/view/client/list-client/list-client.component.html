@@ -1,0 +1,45 @@
+<table class="table table-bordered table-hover"  bgcolor="#f0ffff" *ngIf="clients.length !=0" >
+  <thead>
+  <th>ID</th>
+  <th>Code</th>
+  <th>Libelle</th>
+  <th>Responsable</th>
+  <th>Adresse</th>
+  <th>Tele</th>
+  <th>Email</th>
+  <th>Fax</th>
+  <th>SMTVA</th>
+  <th>MATFISC</th>
+  <th>Timbre</th>
+  <th>CREE</th>
+  <th>SOLDINIT</th>
+  <th>SOLDEF</th>
+  <th>LOGIN</th>
+  <th>Password</th>
+  <th>Action</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let cc of clients; index as i ">
+    <td>{{cc.id}}</td>
+    <td>{{cc.code}}</td>
+    <td>{{cc.libelle}}</td>
+    <td>{{cc.responsable}}</td>
+    <td>{{cc.adresse}}</td>
+    <td>{{cc.tel}}</td>
+    <td>{{cc.email}}</td>
+    <td>{{cc.fax}}</td>
+    <td>{{cc.smtva}}</td>
+    <td>{{cc.matfisc}}</td>
+    <td>{{cc.timbre}}</td>
+    <td>{{cc.cree}}</td>
+    <td>{{cc.soldinit}}</td>
+    <td>{{cc.soldef}}</td>
+    <td>{{cc.login}}</td>
+    <td>{{cc.pwd}}</td>
+
+    <td><span (click)="deleteByCode(cc, i)" class="fa fa-trash btn btn-sm"></span></td>
+  </tr>
+  </tbody>
+</table>
+
+

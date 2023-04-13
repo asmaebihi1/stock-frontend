@@ -1,0 +1,22 @@
+<table class="table table-bordered table-hover"  bgcolor="#f0ffff" *ngIf="scategories.length !=0" >
+  <thead>
+  <th>ID</th>
+  <th>Code</th>
+  <th>Categorie</th>
+  <th>Libelle</th>
+  <th>RANG</th>
+  <th>ACTION</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let sc of scategories; index as i ">
+    <td>{{sc.id}}</td>
+    <td>{{sc.code}}</td>
+    <td>{{sc.categ}}</td>
+    <td>{{sc.libelle}}</td>
+    <td>{{sc.rang}}</td>
+    <td><span (click)="deleteByCode(sc, i)" class="fa fa-trash btn btn-sm"></span></td>
+  </tr>
+  </tbody>
+</table>
+
+

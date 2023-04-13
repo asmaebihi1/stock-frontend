@@ -1,0 +1,101 @@
+<section id="hero" style="background-image: url('assets/image/photo.jpg')">
+  <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+    <br>
+    <br>
+    <div class="container" style="width: 400px">
+
+<div class="card">
+  <div class="card-header">Client</div>
+  <div class="card-body">
+
+
+    <div class="form-group">
+      <label for="id">ID</label>
+      <input id="id" type="text" class="form-control"  [(ngModel)]="client.id">
+    </div>
+
+    <div class="form-group">
+      <label for="code">Code</label>
+      <input id="code" type="text" class="form-control"  [(ngModel)]="client.code">
+    </div>
+
+
+    <div class="form-group">
+      <label for="libelle">Libelle</label>
+      <input id="libelle" type="text" class="form-control"  [(ngModel)]="client.libelle">
+    </div>
+
+    <div class="form-group">
+      <label for="responsable">Responsable</label>
+      <input id="responsable" type="text" class="form-control"  [(ngModel)]="client.responsable">
+    </div>
+
+    <div class="form-group">
+      <label for="adresse">Adresse</label>
+      <input id="adresse" type="text" class="form-control"  [(ngModel)]="client.adresse">
+    </div>
+
+    <div class="form-group">
+      <label for="tel">Tele</label>
+      <input id="tel" type="text" class="form-control"  [(ngModel)]="client.tel">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="text" class="form-control"  [(ngModel)]="client.email">
+    </div>
+
+    <div class="form-group">
+      <label for="fax">Fax</label>
+      <input id="fax" type="text" class="form-control"  [(ngModel)]="client.fax">
+    </div>
+
+    <div class="form-group">
+      <label for="smtva">SMTVA</label>
+      <input id="smtva" type="text" class="form-control"  [(ngModel)]="client.smtva">
+    </div>
+
+    <div class="form-group">
+      <label for="matfisc">MATFISC</label>
+      <input id="matfisc" type="text" class="form-control"  [(ngModel)]="client.matfisc">
+    </div>
+
+    <div class="form-group">
+      <label for="timbre">Timbre</label>
+      <input id="timbre" type="text" class="form-control"  [(ngModel)]="client.timbre">
+    </div>
+
+    <div class="form-group">
+      <label for="cree">CREE</label>
+      <input id="cree" type="date" class="form-control"  [(ngModel)]="client.cree">
+    </div>
+
+    <div class="form-group">
+      <label for="soldinit">SOLDINIT</label>
+      <input id="soldinit" type="text" class="form-control"  [(ngModel)]="client.soldinit">
+    </div>
+
+    <div class="form-group">
+      <label for="soldef">SOLDEF</label>
+      <input id="soldef" type="text" class="form-control"  [(ngModel)]="client.soldef">
+    </div>
+
+    <div class="form-group">
+      <label for="login">LOGIN</label>
+      <input id="login" type="text" class="form-control"  [(ngModel)]="client.login">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input id="pwd" type="password" class="form-control"  [(ngModel)]="client.pwd">
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()">Valider</button>
+  </div>
+</div>
+<app-list-client></app-list-client>
+    </div>
+  </div>
+</section>

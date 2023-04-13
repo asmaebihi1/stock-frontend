@@ -1,0 +1,32 @@
+<table class="table table-bordered table-hover" bgcolor="#f0ffff" *ngIf="articles.length !=0" >
+  <thead>
+  <th>ID</th>
+  <th>Code</th>
+  <th>Libelle</th>
+  <th>PA</th>
+  <th>PV</th>
+  <th>TVA</th>
+  <th>FODEC</th>
+  <th>STKINIT</th>
+  <th>Code Categorie</th>
+  <th>Code Sous Categorie</th>
+  <th>Action</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let a of articles; index as i ">
+    <td>{{a.id}}</td>
+    <td>{{a.code}}</td>
+    <td>{{a.libelle}}</td>
+    <td>{{a.pa}}</td>
+    <td>{{a.pv}}</td>
+    <td>{{a.tva}}</td>
+    <td>{{a.fodec}}</td>
+    <td>{{a.stkinit}}</td>
+    <td>{{a.codecateg}}</td>
+    <td>{{a.codescateg}}</td>
+    <td><span (click)="deleteByCode(a, i)" class="fa fa-trash btn btn-sm"></span></td>
+  </tr>
+  </tbody>
+</table>
+
+

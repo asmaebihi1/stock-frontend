@@ -1,0 +1,83 @@
+<section id="hero" style="background-image: url('assets/image/photo.jpg')">
+  <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+    <br>
+    <br>
+    <div class="container" style="width: 400px">
+
+
+
+
+
+<div class="card">
+  <div class="card-header">Article</div>
+  <div class="card-body">
+
+
+    <div class="form-group">
+      <label for="id">ID</label>
+      <input id="id" type="text" class="form-control"  [(ngModel)]="article.id">
+    </div>
+
+    <div class="form-group">
+      <label for="code">Code</label>
+      <input id="code" type="text" class="form-control"  [(ngModel)]="article.code">
+    </div>
+
+
+    <div class="form-group">
+      <label for="libelle">Libelle</label>
+      <input id="libelle" type="text" class="form-control"  [(ngModel)]="article.libelle">
+    </div>
+
+    <div class="form-group">
+      <label for="pa">PA</label>
+      <input id="pa" type="text" class="form-control"  [(ngModel)]="article.pa">
+    </div>
+
+
+    <div class="form-group">
+      <label for="pv">PV</label>
+      <input id="pv" type="text" class="form-control"  [(ngModel)]="article.pv">
+    </div>
+
+
+    <div class="form-group">
+      <label for="tva">TVA</label>
+      <input id="tva" type="text" class="form-control"  [(ngModel)]="article.tva">
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="fodec">FODEC</label>
+      <input id="fodec" type="text" class="form-control"  [(ngModel)]="article.fodec">
+    </div>
+
+    <div class="form-group">
+      <label for="stkinit">STKINIT</label>
+      <input id="stkinit" type="text" class="form-control"  [(ngModel)]="article.stkinit">
+    </div>
+
+    <div class="form-group">
+      <label for="codecateg">Code Categorie</label>
+      <input id="codecateg" type="text" class="form-control"  [(ngModel)]="article.codecateg">
+    </div>
+
+    <div class="form-group">
+      <label for="codescateg">Code Sous Categorie</label>
+      <input id="codescateg" type="text" class="form-control"  [(ngModel)]="article.codescateg">
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()">Valider</button>
+
+
+
+  </div>
+</div>
+<app-list-article></app-list-article>
+    </div>
+  </div>
+</section>
+

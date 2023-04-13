@@ -1,0 +1,98 @@
+<section id="hero" style="background-image: url('assets/image/photo.jpg')">
+  <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+    <br>
+    <br>
+    <div class="container" style="width: 400px">
+
+
+<div class="card">
+  <div class="card-header">Fournisseur</div>
+  <div class="card-body">
+
+
+    <div class="form-group">
+      <label for="id">ID</label>
+      <input id="id" type="text" class="form-control"  [(ngModel)]="fournisseur.id">
+    </div>
+
+
+    <div class="form-group">
+      <label for="libelle">Libelle</label>
+      <input id="libelle" type="text" class="form-control"  [(ngModel)]="fournisseur.libelle">
+    </div>
+
+    <div class="form-group">
+      <label for="responsable">Responsable</label>
+      <input id="responsable" type="text" class="form-control"  [(ngModel)]="fournisseur.responsable">
+    </div>
+
+    <div class="form-group">
+      <label for="adresse">Adresse</label>
+      <input id="adresse" type="text" class="form-control"  [(ngModel)]="fournisseur.adresse">
+    </div>
+
+
+    <div class="form-group">
+      <label for="tel">Tele</label>
+      <input id="tel" type="text" class="form-control"  [(ngModel)]="fournisseur.tel">
+    </div>
+
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="text" class="form-control"  [(ngModel)]="fournisseur.email">
+    </div>
+
+
+    <div class="form-group">
+      <label for="fax">Fax</label>
+      <input id="fax" type="text" class="form-control"  [(ngModel)]="fournisseur.fax">
+    </div>
+
+
+    <div class="form-group">
+      <label for="matfisc">MATFISC</label>
+      <input id="matfisc" type="text" class="form-control"  [(ngModel)]="fournisseur.matfisc">
+    </div>
+
+
+    <div class="form-group">
+      <label for="cree">CREE</label>
+      <input id="cree" type="date" class="form-control"  [(ngModel)]="fournisseur.cree">
+    </div>
+
+
+    <div class="form-group">
+      <label for="soldinit">SOLDINIT</label>
+      <input id="soldinit" type="text" class="form-control"  [(ngModel)]="fournisseur.soldinit">
+    </div>
+
+
+    <div class="form-group">
+      <label for="soldef">SOLDEF</label>
+      <input id="soldef" type="text" class="form-control"  [(ngModel)]="fournisseur.soldef">
+    </div>
+
+
+    <div class="form-group">
+      <label for="login">LOGIN</label>
+      <input id="login" type="text" class="form-control"  [(ngModel)]="fournisseur.login">
+    </div>
+
+
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input id="pwd" type="password" class="form-control"  [(ngModel)]="fournisseur.pwd">
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()">Valider</button>
+  </div>
+</div>
+</div>
+<app-list-four></app-list-four>
+
+</div>
+
+</section>

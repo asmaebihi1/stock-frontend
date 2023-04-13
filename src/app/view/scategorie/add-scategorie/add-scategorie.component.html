@@ -1,0 +1,48 @@
+
+<section id="hero" style="background-image: url('assets/image/photo.jpg')">
+  <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+    <br>
+    <br>
+    <div class="container" style="width: 400px">
+
+<div class="card">
+  <div class="card-header">Sous Categorie</div>
+  <div class="card-body">
+
+    <div class="form-group">
+      <label for="id">ID</label>
+      <input id="id" type="text" class="form-control"  [(ngModel)]="scategorie.id">
+    </div>
+
+
+    <div class="form-group">
+      <label for="code">Code</label>
+      <input id="code" type="text" class="form-control"  [(ngModel)]="scategorie.code">
+    </div>
+
+
+    <div class="form-group">
+      <label for="categ">Categorie</label>
+      <input id="categ" type="text" class="form-control"  [(ngModel)]="scategorie.categ">
+    </div>
+
+    <div class="form-group">
+      <label for="libelle">Libelle</label>
+      <input id="libelle" type="text" class="form-control"  [(ngModel)]="scategorie.libelle">
+    </div>
+
+    <div class="form-group">
+      <label for="rang">RANG</label>
+      <input id="rang" type="text" class="form-control"  [(ngModel)]="scategorie.rang">
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()">Valider</button>
+  </div>
+</div>
+<app-list-scategorie></app-list-scategorie>
+
+    </div>
+  </div>
+</section>
